@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+@import url(media.css);
+@import url(loading.css);
+
+/* font-family: 'Orbitron', sans-serif;  400, 500, 600, 700 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* display: flex; */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+:root {
+  --owhite: #ffffff;
+  --oblack: #000000;
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #57b8ff;
+  --yellow: #fdd04a;
+  --olightgrey: rgba(223, 223, 223, 0.8);
+  --odarkgrey: #555555;
+  --lightgrey: rgba(223, 223, 223, 0.8);
+  --darkgrey: #555555;
+  --blackblue: linear-gradient(to right, var(--black) 50%, var(--blue) 50%);
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home {
+  padding-bottom: 250px;
+}
+
+header {
+  width: 100%;
+  background-image: linear-gradient(to right, #030303 0 50%, #59b9ff 50% 100%);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: 0.3s;
+  padding: 15px 0px;
+  background: linear-gradient(to right, #030303 0 50%, #59b9ff 50% 100%);
+}
+
+.navbar-shrink {
+  padding: 0px 0px 15px 0px;
+  box-shadow: 2px 6px 16px #030303;
+}
+
+.nav-image {
+  display: flex;
+}
+
+.nav-links > ul {
+  display: flex;
+}
+
+.infinizai-img {
+  margin: 25px 8px 0px 0px;
+}
+
+.full-stop-img {
+  margin: 47px 0px 0px 0px;
+}
+
+.nav-image > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 37px 7px 0px 0px;
+}
+
+.nav-links ul li {
+  margin: 38px 60px 0px 0px;
+}
+
+.nav-links ul li > a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.nav-links ul li > a:hover {
+  color: #fac422;
+}
+
+.header-right {
+  display: flex;
+}
+
+.dark {
+  background-color: black;
+}
+
+.dark * {
+  color: white !important;
+}
+
+#dark-light  {
+  width: 48px;
+  height: 48px;
+  margin: 25px 0px 0px 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#dark-light > img {
+  width: 40px;
+  height: 40px;
+}
+
+.submit > button {
+  width: 178px;
+  height: 62px;
+  margin: 20px 0px 0px 30px;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.home-section-2 {
+  display: flex;
+}
+
+.section-left {
+  position: relative;
+  margin-top: 215px;
+}
+
+.esports {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.esports > p {
+  padding: 8px 0px 0px 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #57b8ff;
+}
+
+.generation {
+  margin-bottom: 45px;
+}
+
+.generation > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.generation-1 {
+  position: absolute;
+  max-width: 460px;
+  top: 220px;
+  left: 220px;
+}
+
+.lorem {
+  margin-bottom: 53px;
+}
+
+.lorem > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #999999;
+}
+
+.home-buttons > button {
+  width: 203px;
+  height: 70px;
+  margin-right: 6px;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ffffff;
+  border: 1px solid #57b8ff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.home-buttons > button:hover {
+  background: #57b8ff;
+  border-radius: 0px;
+  transition: all 0.3s;
+}
+
+.section-right {
+  margin: 214px 0px 0px 55px;
+}
+
+#about {
+  padding: 130px 0px 130px 0px;
+  background-color: #fdd04a;
+}
+
+.about-sponsors {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.about-sponsors > p {
+  padding-bottom: 5px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: capitalize;
+  color: #222730;
+}
+
+.about-sponsors > img {
+  width: 288px;
+  position: absolute;
+  left: 600px;
+}
+
+.about-lorem {
+  margin-bottom: 41px;
+}
+
+.about-lorem {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #555555;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+#team {
+  background: url(../images/backround-team.png) no-repeat center;
+  /* background-size: 100%; */
+  background-size: cover;
+}
+
+.team-start {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+  padding-top: 130px;
+}
+
+.team-start > img {
+  padding: 0px 8px 0px 0px;
+}
+
+.team-start > p {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #57b8ff;
+}
+
+.team-second {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+
+.team-second > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.team-third {
+  margin-bottom: 60px;
+}
+
+.team-third > p {
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(223, 223, 223, 0.8);
+}
+
+.cards-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 130px;
+}
+
+.card {
+  width: 49%;
+  height: 212px;
+  margin-bottom: 32px;
+  padding: 35px 0px 0px 38px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+}
+
+.card-image {
+  display: flex;
+  margin: 0px 0px 19px 0px;
+}
+
+.card-image > img {
+  padding: 0px 17px 0px 0px;
+}
+
+.card-image > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.card-start {
+  margin-left: 49px;
+}
+
+.card-start > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(223, 223, 223, 0.8);
+}
+
+#shop {
+  background-color: #030303;
+  padding: 85px 0;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-start {
+  margin-bottom: 38px;
+}
+
+.shop-start > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.shop-last {
+  margin-bottom: 54px;
+}
+
+.shop-last > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(223, 223, 223, 0.8);
+}
+
+video {
+  width: 492px;
+  height: 550px;
+}
+
+#games {
+  margin-top: -1px;
+  background-color: #030303;
+}
+
+.games-container {
+  display: flex;
+}
+
+.images-games > img {
+  width: 467px;
+}
+
+#pages {
+  background-color: #030303;
+  padding: 75px 0px 86px 0px;
+  margin-top: -5px;
+}
+
+.pages-container {
+  display: flex;
+}
+
+.pages-second {
+  margin: 0px 0px 68px 0px;
+}
+
+.pages-second > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.pages-img {
+  margin-bottom: 54px;
+  margin-right: 60px;
+}
+
+.date {
+  margin-bottom: 28px;
+}
+
+.date > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #57b8ff;
+}
+
+.pages-last > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.right-pages-start {
+  margin-top: 120px;
+}
+
+.right-pages-start {
+  display: flex;
+  justify-content: end;
+}
+
+.right-pages-start > button {
+  width: 203px;
+  height: 70px;
+  margin-bottom: 80px;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ffffff;
+  border: 1px solid #57b8ff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.right-pages-start > button:hover {
+  background: #57b8ff;
+  border-radius: 0px;
+  transition: all 0.3s;
+}
+
+.cards-pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-page {
+  width: 312px;
+  margin-bottom: 45px;
+}
+
+.card-img-page {
+  margin-bottom: 30px;
+}
+
+.card-p1 {
+  margin-bottom: 20px;
+}
+
+.card-p1 > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #57b8ff;
+}
+
+.card-p2 > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+#footer {
+  background: url(../images/footer.png) no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+  padding: 126px 0px 100px 0px;
+}
+
+.footer-start {
+  position: relative;
+  margin-bottom: 51px;
+}
+
+.footer-start > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  text-align: center;
+  color: #141820;
+}
+
+.footer-start > img {
+  position: absolute;
+  width: 434px;
+  left: 630px;
+}
+
+.footer-second {
+  margin-bottom: 50px;
+}
+
+.footer-second > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #555555;
+}
+
+.footer-last {
+  display: flex;
+  justify-content: center;
+}
+
+.input-1 {
+  width: 445px;
+  height: 70px;
+  padding: 0px 20px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #555555;
+  margin: 0;
+  outline: none;
+}
+
+.input-2 {
+  width: 221px;
+  height: 68px;
+  background: #57b8ff;
+  border: none;
+  border-radius: 0px;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: -5px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1285px) {
+  .section-right > img {
+    padding-left: 30px;
+  }
+}

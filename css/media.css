@@ -1,0 +1,5 @@
+@media (max-width: 1200px) {
+  header {
+    background: linear-gradient(to bottom, #030303, #59b9ff);
+  }
+}
